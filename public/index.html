@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Word Counter</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches" rel="stylesheet">
   <script src="./js/bundle.js"></script>
 </head>
 <body>
   <div id="app">
     <h1 id="title">Word Counter</h1>
-    <h3 id="subtitle">Enter some text:</h3>
+    <h3 id="subtitle">Enter in some text:</h3>
 
-    <textarea name="textInput" id="textInput" v-model="textInput" cols="80" rows="10"></textarea>
+    <textarea name="textInput" id="textInput" v-model="textInput" cols="70" rows="8"></textarea>
     <button v-on:click="wordCount">Count words</button>
 
-    <h2 id="result">This phrase contains {{ result }} words</h2>
+    <span v-if="result">This phrase contains {{ result }} words</span>
   </div>
 </body>
 </html>
