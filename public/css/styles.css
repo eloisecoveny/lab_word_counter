@@ -27,6 +27,7 @@ textarea {
   display: flex;
   border: dotted 1px;
   font-size: 15px;
+  margin: 10px;
 }
 
 button {
