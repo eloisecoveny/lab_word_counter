@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     methods: {
       wordCount: function(){
-        this.result = wordCount(this.textInput);
+        if(this.textInput){
+          this.result = wordCount(this.textInput);
+        }
       }
     }
   });

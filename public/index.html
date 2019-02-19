@@ -12,11 +12,12 @@
 <body>
   <div id="app">
     <h1 id="title">Word Counter</h1>
-    <h3 id="subtitle">Enter in some text:</h3>
+    <h3 id="subtitle">Type until your heart's content...</h3>
 
-    <textarea name="textInput" id="textInput" v-model="textInput" cols="70" rows="8"></textarea>
+    <textarea name="textInput" id="textInput" v-model="textInput" cols="70" rows="8" placeholder="Enter in some text"></textarea>
+  <div id="button">
     <button v-on:click="wordCount">Count words</button>
-
+  </div>
     <span v-if="result">This phrase contains {{ result }} words</span>
   </div>
 </body>
